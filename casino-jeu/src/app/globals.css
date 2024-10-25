@@ -1,0 +1,94 @@
+body {
+  /* background-color: #008000; */
+  background-image: url("style/fond-jeu-casino.jpg");
+  font-family: "Arial", sans-serif;
+  background-repeat: none;
+  background-size: cover;
+}
+
+.table {
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  /* background-color: #005700; */
+  background-color: #707670;
+  opacity: 0.8;
+}
+
+.card {
+  width: 10%;
+  height: 200px;
+  border: 2px solid white;
+  border-radius: 8px;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  font-size: 1.5rem;
+  color: #000;
+  transition: transform 0.3s;
+  position: relative;
+  z-index: 1;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.computer-hand {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.computer-hand::before {
+  content: "Ordinateur";
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 5px;
+  border-radius: 5px;
+  z-index: 2;
+}
+
+.player-hand {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.deck {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-left: 100px;
+}
+
+.deck h3 {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.pile {
+  background-color: #ccc;
+  font-size: 1.5rem;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  width: 100px;
+  height: 150px;
+  position: relative;
+  z-index: 0;
+}
